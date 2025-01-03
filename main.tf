@@ -37,9 +37,9 @@ module "blog_sg" {
 
   vpc_id = data.aws_vpc.default.id
 
-  ingrees_rules       = ["http-80-tc","https-443-tcp"]
+  ingress_rules       = ["http-80-tc","https-443-tcp"]
   ingress_cidr_blocks = ["0.0.0.0/0"]
 
-  egrees_rules       = ["all-all"]
+  egress_rules       = ["all-all"]
   egress_cidr_blocks = ["0.0.0.0/0"]
 }
